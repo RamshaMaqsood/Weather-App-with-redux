@@ -20,8 +20,17 @@
 }
 
 .dark {
-  background-color: black;
+  background: black;
   color: #ecf0f1;
+}
+.dark .temperature{
+  color: white;
+}
+.dark .location{
+  color: white;
+}
+.dark .weather-data{
+  color: white;
 }
 
 .search-bar {

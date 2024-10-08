@@ -1,0 +1,148 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  min-height: 100vh;
+  display: grid;
+  background-color: rgb(246, 246, 229);
+}
+.weather {
+  place-self: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #f6a6a1, #a4c8e1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark {
+  background-color: black;
+  color: #ecf0f1;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  font-size: 18px;
+  background-color: #f2e5d7;
+  color: #1a1d6e;
+}
+.search-bar img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #f2e5d7;
+}
+
+.weather-icon {
+  align-items: center;
+
+  width: 150px;
+  margin: 30px 0;
+}
+
+.temperature {
+  text-align: center;
+
+  font-size: 80px;
+  line-height: 1;
+  color: #1a1d6e;
+}
+
+.location {
+  text-align: center;
+  font-size: 40px;
+  color: #1a1d6e;
+}
+
+.weather-data {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #1a1d6e;
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.weather-data .col img {
+  width: 26px;
+  margin-top: 10px;
+}
+
+.weather-data .col p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+
+button.toggle-dark-mode {
+  background-color: transparent;
+  border: 2px solid #2980b9;
+  color: #2980b9;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+}
+
+.dark button.toggle-dark-mode {
+  color: #ecf0f1;
+  border-color: #ecf0f1;
+}
+
+button.toggle-dark-mode:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .weather {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .temperature {
+    font-size: 40px;
+  }
+
+  .location {
+    font-size: 20px;
+  }
+
+  .weather-data .col p {
+    font-size: 16px;
+  }
+
+  .weather-data .col img {
+    width: 25px;
+    height: 25px;
+  }
+}

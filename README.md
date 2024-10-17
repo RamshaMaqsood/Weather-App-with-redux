@@ -70,7 +70,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/RamshaMaqsood/Weather-App-with-redux
 Navigate to the project directory:
 
 bash
@@ -85,7 +85,7 @@ Create a .env file in the root directory and add your OpenWeatherMap API key:
 
 makefile
 Copy code
-VITE_APP_ID=your_api_key_here
+VITE_APP_ID=f06f05ac39bae4faf441f0b62f233429;
 Start the development server:
 
 bash

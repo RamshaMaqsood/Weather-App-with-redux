@@ -54,8 +54,16 @@
   padding: 15px;
   border-radius: 50%;
   cursor: pointer;
+  background: transparent;
   background-color: #f2e5d7;
 }
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
 
 .weather-icon {
   align-items: center;
